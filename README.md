@@ -3,6 +3,7 @@
 
 Bu projede, kripto para piyasasına ait zaman serisi verileri kullanılarak teknik göstergelere dayalı bir alım-satım stratejisinin backtest edilmesi amaçlanmıştır.
 
+   - Not: Veri seti boyutunun yüksek olması nedeniyle repoya dahil edilmemiştir. Ancak veri yapısı, kullanılan alanlar ve backtest süreci notebook içerisinde detaylı olarak gösterilmiştir.
 
 1. Proje Genel Bakış
 
@@ -12,9 +13,9 @@ Bu projede, kripto para piyasasına ait zaman serisi verileri kullanılarak tekn
 
     Veri seti aşağıdaki bileşenleri içermektedir:
 
-        - Gerçek piyasa fiyatları (normal_open, normal_close vb.)
-        - Heiken Ashi dönüşümü ile elde edilen fiyatlar
-        - Teknik indikatörler (RSI, SMA, EMA, MACD, trend vb.)
+   - Gerçek piyasa fiyatları (normal_open, normal_close vb.)
+   - Heiken Ashi dönüşümü ile elde edilen fiyatlar
+   - Teknik indikatörler (RSI, SMA, EMA, MACD, trend vb.)
 
     Amaç, geçmiş veriler üzerinden işlem sinyalleri üretmek ve bu sinyallere göre oluşturulan işlemlerin performansını analiz etmektir.
 
@@ -27,10 +28,10 @@ Bu projede, kripto para piyasasına ait zaman serisi verileri kullanılarak tekn
 
     Örnek kullanılan değişkenler:
 
-        - RSI (Relative Strength Index)
-        - SMA200 (200 periyotluk hareketli ortalama)
-        - Trend göstergeleri
-        - Fiyat bazlı türetilmiş değişkenler
+    - RSI (Relative Strength Index)
+    - SMA200 (200 periyotluk hareketli ortalama)
+    - Trend göstergeleri
+    - Fiyat bazlı türetilmiş değişkenler
 
 
 3. Strateji ve Sinyal Üretimi
@@ -53,15 +54,15 @@ Bu projede, kripto para piyasasına ait zaman serisi verileri kullanılarak tekn
 
     Backtest süreci aşağıdaki adımlarla gerçekleştirilmiştir:
 
-        1. Sinyal değişimlerine göre entry (giriş) ve exit (çıkış) noktaları belirlenmiştir  
-        2. Her entry, kendisinden sonra gelen ilk exit ile eşleştirilmiştir  
-        3. İşlemler coin bazlı (symbol) ayrı ayrı değerlendirilmiştir  
-        4. Trade bazlı bir veri seti oluşturulmuştur  
+    1. Sinyal değişimlerine göre entry (giriş) ve exit (çıkış) noktaları belirlenmiştir  
+    2. Her entry, kendisinden sonra gelen ilk exit ile eşleştirilmiştir  
+    3. İşlemler coin bazlı (symbol) ayrı ayrı değerlendirilmiştir  
+    4. Trade bazlı bir veri seti oluşturulmuştur  
 
     Önemli bir nokta:
 
-        - Sinyaller Heiken Ashi verilerinden üretilmiştir  
-        - Ancak işlemler gerçek piyasa fiyatları ("normal_open") ile simüle edilmiştir  
+    - Sinyaller Heiken Ashi verilerinden üretilmiştir  
+    - Ancak işlemler gerçek piyasa fiyatları ("normal_open") ile simüle edilmiştir  
 
     Bu ayrım, backtest sonuçlarının daha gerçekçi olmasını sağlamaktadır.
 
@@ -81,21 +82,21 @@ Bu projede, kripto para piyasasına ait zaman serisi verileri kullanılarak tekn
 
     Strateji performansı aşağıdaki metrikler ile değerlendirilmiştir:
 
-        - Ortalama getiri (Average Return)
-        - Kazanma oranı (Win Rate)
-        - Minimum ve maksimum getiri
-        - Long vs Short performans karşılaştırması
-        - Kümülatif getiri (simple sum)
-        - Equity curve (compounded)
+    - Ortalama getiri (Average Return)
+    - Kazanma oranı (Win Rate)
+    - Minimum ve maksimum getiri
+    - Long vs Short performans karşılaştırması
+    - Kümülatif getiri (simple sum)
+    - Equity curve (compounded)
 
 
 7. Görselleştirme
 
     Strateji performansı iki farklı şekilde görselleştirilmiştir:
 
-        - Cumulative Return (Simple Sum): Trade sonuçlarının toplamsal etkisini gösterir
+    - Cumulative Return (Simple Sum): Trade sonuçlarının toplamsal etkisini gösterir
 
-        - Equity Curve (Compounded): Sermayenin zaman içindeki gerçek büyümesini simüle eder
+    - Equity Curve (Compounded): Sermayenin zaman içindeki gerçek büyümesini simüle eder
 
 
 8. Sonuç
@@ -108,9 +109,9 @@ Bu projede, kripto para piyasasına ait zaman serisi verileri kullanılarak tekn
 
     Ayrıca, doğru bir backtest sürecinde:
 
-        - Gerçek fiyat kullanımı
-        - İşlem maliyetlerinin dahil edilmesi
-        - Veri sızıntısının engellenmesi
+    - Gerçek fiyat kullanımı
+    - İşlem maliyetlerinin dahil edilmesi
+    - Veri sızıntısının engellenmesi
 
     gibi unsurların sonuçları ciddi şekilde etkilediği gözlemlenmiştir.
 
