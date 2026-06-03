@@ -1,9 +1,10 @@
 
 *** Crypto Trading Strategy Backtest (Time Series Analysis)
 
+- Not: Veri seti boyutunun yüksek olması nedeniyle repoya dahil edilmemiştir. Ancak veri yapısı, kullanılan alanlar ve backtest süreci notebook içerisinde detaylı olarak gösterilmiştir.
+
 Bu projede, kripto para piyasasına ait zaman serisi verileri kullanılarak teknik göstergelere dayalı bir alım-satım stratejisinin backtest edilmesi amaçlanmıştır.
 
-   - Not: Veri seti boyutunun yüksek olması nedeniyle repoya dahil edilmemiştir. Ancak veri yapısı, kullanılan alanlar ve backtest süreci notebook içerisinde detaylı olarak gösterilmiştir.
 
 1. Proje Genel Bakış
 
@@ -54,10 +55,10 @@ Bu projede, kripto para piyasasına ait zaman serisi verileri kullanılarak tekn
 
     Backtest süreci aşağıdaki adımlarla gerçekleştirilmiştir:
 
-    1. Sinyal değişimlerine göre entry (giriş) ve exit (çıkış) noktaları belirlenmiştir  
-    2. Her entry, kendisinden sonra gelen ilk exit ile eşleştirilmiştir  
-    3. İşlemler coin bazlı (symbol) ayrı ayrı değerlendirilmiştir  
-    4. Trade bazlı bir veri seti oluşturulmuştur  
+   - Sinyal değişimlerine göre entry (giriş) ve exit (çıkış) noktaları belirlenmiştir  
+   - Her entry, kendisinden sonra gelen ilk exit ile eşleştirilmiştir  
+   - İşlemler coin bazlı (symbol) ayrı ayrı değerlendirilmiştir  
+   - Trade bazlı bir veri seti oluşturulmuştur  
 
     Önemli bir nokta:
 
